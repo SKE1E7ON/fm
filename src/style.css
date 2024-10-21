@@ -159,6 +159,7 @@ header{
     transition: transform 0.5s ease;
 }
 .blur{
+    z-index: 2;
     display: none;
     top: 0px;
     left: 0px;
@@ -1046,6 +1047,17 @@ footer span{
 }
 
 .call_me{
+    overflow: auto;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    flex-direction: column;
+    width: 320px;
+    background: #fdfdfd;
+    height: 100%;
+}
+.call_me_form{
     z-index: 100;
     top: 0px;
     right: 0px;
@@ -1106,11 +1118,22 @@ footer span{
     box-sizing: border-box;
     align-self: flex-end;
 }
-.call_me button img{
+.call_me_form button img{
     width: 40px;
 }
 
 .call_back{
+    overflow: auto;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+    position: absolute;
+    flex-direction: column;
+    width: 320px;
+    background: #fdfdfd;
+    height: 100%;
+}
+.call_back_form{
     z-index: 100;
     top: 0px;
     right: 0px;
@@ -1175,7 +1198,7 @@ footer span{
     box-sizing: border-box;
     align-self: flex-end;
 }
-.call_back button img{
+.call_back_form button img{
     width: 40px;
 }
 .exid{

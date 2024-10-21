@@ -12,24 +12,24 @@
         <div class="nav">
             <div class="left_nav">
                 <button id="menu_button">
-                    <img src="/src/img/menu.png" alt="menu">
+                    <img src="/src/img/menu.svg" alt="menu">
                 </button>
                 <hr>
-                <img src="/src/img/logo.png" alt="logo CVPS">
+                <img src="/src/img/logo.svg" alt="logo CVPS">
             </div>
             
             
 
 
             <div class="midle_nav">
-                <button>
-                    <img src="/src/img/call.png" alt="call">
+                <button type="button" id="me_call">
+                    <img src="/src/img/call.svg" alt="call">
                 </button>
                 <button>
-                    <img src="/src/img/chat.png" alt="chat">
+                    <img id="back_call" src="/src/img/chat.svg" alt="chat">
                 </button>
                 <button>
-                    <img src="/src/img/profile.png" alt="profile">
+                    <img src="/src/img/profile.svg" alt="profile">
                 </button>
             </div>
 
@@ -38,71 +38,77 @@
 
 
             <div class="right_hav">
-                <button id="me_call">
-                    <img src="/src/img/repair.png" alt="settings">
+                <button>
+                    <img src="/src/img/repair.svg" alt="settings">
                 </button>
-                <button id="back_call">
-                    <img src="/src/img/status.png" alt="chekstatus">
+                <button>
+                    <img src="/src/img/status.svg" alt="chekstatus">
                 </button>
             </div>
         </div>
     </header>
-    <form id="call_back" class="call_back off">
-        <button class="exid" id="exid">
-            <img src="./img/close.png">
+    <div id="call_back_form" class="call_back_form off">
+        <button class="exid" id="exid">   
+            <img src="img/close.svg">
         </button>
-        <div class="call_back_header">
-            <hr>
-            <h2>Заказать звонок</h2>
-        </div>
-        <div class="call_back_main">
-            <input type="number" placeholder="Телефон">
-        </div>
-        <div class="call_back_footer">
-            <span>
-                Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a>
-            </span>
-            <button type="button">
-                Отправить >
-            </button>
-        </div>
-    </form>
-    <form id="call_me" class="call_me off">
-        <button class="exid" id="exid">
-            <img src="./img/close.png">
+        <form id="call_back" class="call_back off">
+            <div class="call_back_header">
+                <hr>
+                <h2>Заказать звонок</h2>
+            </div>
+            <div class="call_back_main">
+                <input type="number" placeholder="Телефон">
+            </div>
+            <div class="call_back_footer">
+                <span>
+                    Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a>
+                </span>
+                <button type="button">
+                    Отправить >
+                </button>
+            </div>
+        </form>
+    </div>
+    
+    <div id="call_me_form" class="call_me_form off">
+        <button class="exid" id="exids">   
+            <img src="img/close.svg">
         </button>
-        <div class="call_me_header">
-            <hr> 
-            <h2>Обратная связь</h2>
-        </div>
-        <div class="call_me_main">
-            <input type="text" placeholder="Имя">
-            <input type="number" placeholder="Телефон">
-            <input type="email" placeholder="Адрес электронной почты">
-            <input type="text" placeholder="Сообщение">
-        </div>
-        <div class="call_me_footer">
-            <span>
-                Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a>
-            </span>
-            <button type="button">
-                Отправить >
-            </button>
-        </div>
-    </form>
+        <form id="call_me" class="call_me off">
+            <div class="call_me_header">
+                <hr> 
+                <h2>Обратная связь</h2>
+            </div>
+            <div class="call_me_main">
+                <input type="text" placeholder="Имя">
+                <input type="number" placeholder="Телефон">
+                <input type="email" placeholder="Адрес электронной почты">
+                <input type="text" placeholder="Сообщение">
+            </div>
+            <div class="call_me_footer">
+                <span>
+                    Нажимая “отправить”, вы даете согласие на <a>обработку персональных данных</a> и соглашаетесь с нашей <a>политикой конфиденциальности</a>
+                </span>
+                <button type="button">
+                    Отправить >
+                </button>
+            </div>
+        </form>
+    </div>
+    
     <form id="menu" class="menu hidden">
         <div class="header_menu_nav">
             <div class="menu_left_nav">
                 <button type="button" id="close_menu">
-                    <img src="/src/img/close.png" alt="close">
+                    <img src="/src/img/close.svg" alt="close">
                 </button>
-                <img src="/src/img/logo.png" alt="logo CVPS">
+                <img src="/src/img/logo.svg" alt="logo CVPS">
             </div>
 
             
             <div class="menu_right_nav">
                 <button>
-                    <img src="/src/img/serch.png" alt="serch">
+                    <img src="/src/img/serch.svg" alt="serch">
                 </button>
             </div>
         </div>
@@ -119,9 +125,9 @@
             </ul>
         </div>
         <div class="menu_footer">
-            <button title="Заказать звонок"><img src="img/call.png"></button>
-            <button title="Обратная связь"><img src="img/chat.png"></button>
-            <button title="Профиль"><img src="img/profile.png"></button>
+            <button type="button" id="me_calls" title="Заказать звонок"><img src="img/call.svg"></button>
+            <button type="button"  id="back_calls" title="Обратная связь"><img src="img/chat.svg"></button>
+            <button title="Профиль"><img src="img/profile.svg"></button>
             <div class="menu-footer__contacts">
                 <a href="mailto:mail@cps.com" class="menu-footer__mail">mail@cps.com</a>
                 <a href="tel:88008908900" class="menu-footer__tel">88008908900</a>
@@ -144,13 +150,13 @@
             <div class="main_menu_full">
                 <div class="header_menu_nav">
                     <div class="menu_left_nav">
-                        <img src="/src/img/logo.png" alt="logo CVPS">
+                        <img src="/src/img/logo.svg" alt="logo CVPS">
                     </div>
         
                     
                     <div class="menu_right_nav">
                         <button>
-                            <img src="/src/img/serch.png" alt="serch">
+                            <img src="/src/img/serch.svg" alt="serch">
                         </button>
                     </div>
                 </div>
@@ -167,9 +173,9 @@
                     </ul>
                 </div>
                 <div class="menu_footer">
-                    <button title="Заказать звонок"><img src="img/call.png"></button>
-                    <button title="Обратная связь"><img src="img/chat.png"></button>
-                    <button title="Профиль"><img src="img/profile.png"></button>
+                    <button type="button" id="me_call" title="Заказать звонок"><img src="img/call.svg"></button>
+                    <button type="button" id="back_call"  title="Обратная связь"><img src="img/chat.svg"></button>
+                    <button title="Профиль"><img src="img/profile.svg"></button>
                     <div class="menu-footer__contacts">
                         <a href="mailto:mail@cps.com" class="menu-footer__mail">mail@cps.com</a>
                         <a href="tel:88008908900" class="menu-footer__tel">88008908900</a>
@@ -195,11 +201,11 @@
                         
                         <button id="repair">
                             <h3>Оставить заявку</h3>
-                            <img src="img/repair.png">
+                            <img src="img/repair.svg">
                         </button>
                         <button id="status">
                             <h3>Статус ремонта</h3>
-                            <img src="img/status.png">
+                            <img src="img/status.svg">
                         </button>
                     </div>
                 </div>
@@ -223,10 +229,10 @@
                              что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным 
                              и близким.</h3>
                         <button id="show_text" class="on">
-                            <img src="/src/img/image copy.png"><p>Читать далее</p>
+                            <img src="/src/img/image copy.svg"><p>Читать далее</p>
                         </button>
                         <button id="close_text" class="off">
-                            <img src="/src/img/image copy.png"><p>Cкрыть</p>
+                            <img src="/src/img/image copy.svg"><p>Cкрыть</p>
                         </button>
                     </div>
                     <img src="/src/img/image.png">
@@ -240,55 +246,55 @@
                             <div class="swiper-slide">
                                 <button>
                                     <img src="img/lenovo.png" alt="lenovo">
-                                    <a><img src="img/btn.png"></a>
+                                    <a><img src="img/btn.svg"></a>
                                 </button>
                             </div>
                           <div class="swiper-slide">
                             <button>
                                 <img src="img/samsung.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                           </div>
                           <div class="swiper-slide">
                             <button>
                                 <img src="img/apple.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                           </div>
                           <div class="swiper-slide">
                             <button>
                                 <img src="img/viewsonic.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                           </div>
                           <div class="swiper-slide">
                             <button>
                                 <img src="img/bosch.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                           </div>
                           <div class="swiper-slide">
                             <button>
                                 <img src="img/hp.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                           </div>
                           <div class="swiper-slide">
                             <button>
                                 <img src="img/a.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                           </div>
                           <div class="swiper-slide">
                             <button>
                                 <img src="img/sony.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                           </div>
                           <div class="swiper-slide">
                             <button>
                                 <img src="img/lenovo.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                           </div>
                         </div>
@@ -300,53 +306,53 @@
                     <div id="corp_container" class="corp_container">
                             <button>
                                 <img src="img/lenovo.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <img src="img/samsung.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <img src="img/apple.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <img src="img/viewsonic.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <img src="img/bosch.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <img src="img/hp.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <img src="img/a.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <img src="img/sony.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <img src="img/lenovo.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <img src="img/samsung.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <img src="img/apple.png" alt="lenovo">
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                 
                     </div>
                     <div class="footer_corp_container">
-                        <button type="button" id="show"><img src="img/sorce.png"><p>Показать всё</p></button>
-                        <button type="button" id="close"><img src="img/sorce.png"><p>Скрыть</p></button>
+                        <button type="button" id="show"><img src="img/sorce.svg"><p>Показать всё</p></button>
+                        <button type="button" id="close"><img src="img/sorce.svg"><p>Скрыть</p></button>
                     </div>
                 </div>
 
@@ -360,49 +366,49 @@
                         <div class="swiper-slide">
                             <button>
                                 <p>Ремонт ноутбуков</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                         </div>
                     <div class="swiper-slide">
                         <button>
                             <p>Ремонт ноутбуков</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                         </button>
                     </div>
                     <div class="swiper-slide">
                         <button>
                             <p>Ремонт ноутбуков</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                         </button>
                     </div>
                     <div class="swiper-slide">
                         <button>
                             <p>Ремонт ноутбуков</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                         </button>
                     </div>
                     <div class="swiper-slide">
                         <button>
                             <p>Ремонт ноутбуков</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                         </button>
                     </div>
                     <div class="swiper-slide">
                         <button>
                             <p>Ремонт ноутбуков</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                         </button>
                     </div>
                     <div class="swiper-slide">
                         <button>
                             <p>Ремонт ноутбуков</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                         </button>
                     </div>
                     <div class="swiper-slide">
                         <button>
                             <p>Ремонт ноутбуков</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                         </button>
                     </div>
                     </div>
@@ -414,41 +420,41 @@
                     <div id="staff_container" class="staff_container">
                             <button>
                                 <p>Ремонт ноутбуков</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <p>Ремонт планшетов</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <p>Ремонт ПК</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <p>Ремонт мониторов</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <p>Ремонт ноутбуков</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <p>Ремонт планшетов</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <p>Ремонт ПК</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                             <button>
                                 <p>Ремонт мониторов</p>
-                                <a><img src="img/btn.png"></a>
+                                <a><img src="img/btn.svg"></a>
                             </button>
                 
                     </div>
                     <div class="footer_staff_container">
-                        <button type="button" id="show_staff"><img src="img/sorce.png"><p>Показать всё</p></button>
-                        <button type="button" id="close_staff" style="display: none;"><img src="img/sorce.png"><p>скрыть</p></button>
+                        <button type="button" id="show_staff"><img src="img/sorce.svg"><p>Показать всё</p></button>
+                        <button type="button" id="close_staff" style="display: none;"><img src="img/sorce.svg"><p>скрыть</p></button>
                     </div>
                 </div> 
                 
@@ -689,3 +695,5 @@
     <script src="index.js"></script>
 </body>
 </html>
+
+<!-- <script src="01cc15c216363e0e143f.js"></script><script src="81f1d1c53b2703a35eda.js"></script> -->

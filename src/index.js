@@ -22,7 +22,12 @@ const call_me = document.getElementById("call_me")
 const me_call = document.getElementById("me_call")
 const call_back = document.getElementById("call_back")
 const back_call = document.getElementById("back_call")
-const exid = document. getElementById("exid")
+const call_me_form = document.getElementById("call_me_form")
+const call_back_form = document.getElementById("call_back_form")
+const exid = document.getElementById("exid")
+const exids =document.getElementById("exids")
+const me_calls = document.getElementById("me_calls")
+const back_calls = document.getElementById("back_calls")
 
 navLinks.forEach(link => {
   link.addEventListener('click', (event) => {
@@ -32,27 +37,67 @@ navLinks.forEach(link => {
   });
 });
 
-exid.addEventListener('click', () => {
-  call_me.classList.add('off');
-  call_me.classList.remove('on');
-  blurs.style.display = "none"
-});
-
 me_call.addEventListener('click', () =>{
   call_me.classList.add('on');
   call_me.classList.remove('off');
+  call_me_form.classList.add('on');
+  call_me_form.classList.remove('off');
   blurs.style.display = "block"
 
 });
+me_calls.addEventListener('click', () =>{
+  menu.classList.add('hidden');
+  menu.classList.remove('visible');
+  call_me.classList.add('on');
+  call_me.classList.remove('off');
+  call_me_form.classList.add('on');
+  call_me_form.classList.remove('off');
+  blurs.style.display = "block"
+
+});
+exids.addEventListener('click', () =>{
+  call_me.classList.add('off');
+  call_me.classList.remove('on');
+  call_me_form.classList.add('off');
+  call_me_form.classList.remove('on');
+  blurs.style.display = "none"
+})
 exid.addEventListener('click', () => {
   call_back.classList.add('off');
   call_back.classList.remove('on');
+  call_back_form.classList.add('off');
+  call_back_form.classList.remove('on');
   blurs.style.display = "none"
 });
 
+blurs.addEventListener('click', () =>{
+  call_me.classList.add('off');
+  call_me.classList.remove('on');
+  call_me_form.classList.add('off');
+  call_me_form.classList.remove('on');
+  call_back.classList.add('off');
+  call_back.classList.remove('on');
+  call_back_form.classList.add('off');
+  call_back_form.classList.remove('on');
+  menu.classList.add('hidden');
+  menu.classList.remove('visible');
+  blurs.style.display = "none"
+})
 back_call.addEventListener('click', () =>{
   call_back.classList.add('on');
   call_back.classList.remove('off');
+  call_back_form.classList.add('on');
+  call_back_form.classList.remove('off');
+  blurs.style.display = "block"
+
+});
+back_calls.addEventListener('click', () =>{
+  menu.classList.add('hidden');
+  menu.classList.remove('visible');
+  call_back.classList.add('on');
+  call_back.classList.remove('off');
+  call_back_form.classList.add('on');
+  call_back_form.classList.remove('off');
   blurs.style.display = "block"
 
 });
